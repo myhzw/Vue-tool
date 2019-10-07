@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <KFormTest></KFormTest>
+    <!-- <HelloWorld  attr="123" placeholder="111" msg="Welcome to Your Vue.js App" /> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
+import KFormTest from '@/components/form';
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    KFormTest
+  },
+  provide(){
+    return {
+      ces: 111
+    }
+  },
+  mounted(){
+   
   }
 };
 </script>
